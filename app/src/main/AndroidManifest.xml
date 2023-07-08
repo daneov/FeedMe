@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,7 +16,7 @@
         tools:targetApi="33">
 
         <activity
-            android:name=".activities.EntryActivity"
+            android:name=".scan.EntryActivity"
             android:label="@string/entry_activity_label"
             android:launchMode="standard"
             android:exported="true">
